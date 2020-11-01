@@ -23,7 +23,8 @@ public class PlayerShooting : MonoBehaviour
 
             Vector3 offset = transform.rotation * bulletOffset;
 
-            Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
+            GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
+            bulletGO.layer = gameObject.layer;
         }
     }
 }

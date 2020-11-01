@@ -18,12 +18,14 @@ public class EnemyShooting : MonoBehaviour
 
       if(cooldownTimer <= 0 ) {
         // Shoot!
-          Debug.Log ("Pew!");
+          Debug.Log ("Enemy Pew!");
           cooldownTimer = fireDelay;
 
           Vector3 offset = transform.rotation * bulletOffset;
 
-          Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
+          GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
+          bulletGO.layer = gameObject.layer;
+
       }
   }
 }
