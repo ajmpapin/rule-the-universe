@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletMovement : MonoBehaviour
+public class MoveForward : MonoBehaviour
 {
-    float maxSpeed = 5f;
+    public float maxSpeed = 10f;
 
 
     // Update is called once per frame
