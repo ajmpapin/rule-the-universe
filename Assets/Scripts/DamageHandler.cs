@@ -13,6 +13,8 @@ public class DamageHandler : MonoBehaviour
 
     public bool dropsLoot;
 
+    public GameObject stardustPrefab;
+
     void Start() {
         correctLayer = gameObject.layer;
 
@@ -42,7 +44,8 @@ public class DamageHandler : MonoBehaviour
     void Die() {
         if(dropsLoot == true) {   /*gameObject = "enemy prefab"*/
             Debug.Log ("Ka-ching!");
-            //instantiate some shit with position xyz
+
+            GameObject stardustGO = (GameObject)Instantiate(stardustPrefab, transform.position, transform.rotation);
         }
 
         Destroy(gameObject);
