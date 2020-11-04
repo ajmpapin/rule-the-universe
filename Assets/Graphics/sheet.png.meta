@@ -16,7 +16,7 @@ TextureImporter:
     second: Bullet01
   - first:
       213: -96796154962138083
-    second: sheet_4
+    second: stardust
   - first:
       213: -7054820123952135176
     second: sheet_5
@@ -220,6 +220,27 @@ TextureImporter:
       bones: []
       spriteID: 495110167743a8630800000000000000
       internalID: 3930011312167392660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stardust
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 738
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cabdfe86c18aef0800000000000000
+      internalID: -96796154962138083
       vertices: []
       indices: 
       edges: []

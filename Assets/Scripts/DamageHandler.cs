@@ -11,6 +11,8 @@ public class DamageHandler : MonoBehaviour
     float invulnTimer = 0;
     int correctLayer;
 
+    public bool dropsLoot;
+
     void Start() {
         correctLayer = gameObject.layer;
 
@@ -29,8 +31,8 @@ public class DamageHandler : MonoBehaviour
         invulnTimer -= Time.deltaTime;
         if(invulnTimer <= 0) {
               gameObject.layer = correctLayer;
-        }
 
+        }
 
         if(health <=0) {
           Die();
@@ -38,8 +40,13 @@ public class DamageHandler : MonoBehaviour
     }
 
     void Die() {
+        if(dropsLoot == true) {   /*gameObject = "enemy prefab"*/
+            Debug.Log ("Ka-ching!");
+            //instantiate some shit with position xyz
+        }
+
         Destroy(gameObject);
 
-    }
 
+    }
 }
