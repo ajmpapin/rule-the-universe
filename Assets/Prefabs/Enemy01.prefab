@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d679560f980241946bba26a371db9819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 1
   invulnPeriod: 0
   dropsLoot: 1
   stardustPrefab: {fileID: 7627939057953278012, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,

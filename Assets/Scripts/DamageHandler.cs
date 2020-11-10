@@ -20,12 +20,19 @@ public class DamageHandler : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D() {
+    void OnTriggerEnter2D(Collider2D entity) {
         Debug.Log ("Trigger!");
 
-        health--;
-        invulnTimer = invulnPeriod;
-        gameObject.layer = 10;
+        if (entity.tag == "loot") {
+        }
+
+        else {
+
+            health--;
+            invulnTimer = invulnPeriod;
+            gameObject.layer = 10;
+
+        }
     }
 
     void Update() {
@@ -42,14 +49,15 @@ public class DamageHandler : MonoBehaviour
     }
 
     void Die() {
-        if(dropsLoot == true) {   /*gameObject = "enemy prefab"*/
+        if(dropsLoot == true) {
             Debug.Log ("Ka-ching!");
 
             GameObject stardustGO = (GameObject)Instantiate(stardustPrefab, transform.position, transform.rotation);
+
         }
 
         Destroy(gameObject);
 
-
     }
+
 }
