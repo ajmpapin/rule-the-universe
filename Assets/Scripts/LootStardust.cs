@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LootStardust : MonoBehaviour
 {
+
+    public Text stardustCount;
 
     int stardustAmt = 0;
 
@@ -15,6 +18,8 @@ public class LootStardust : MonoBehaviour
 
             stardustAmt++;
             Debug.Log ("stardust = " + stardustAmt);
+
+            stardustCount.text = "Stardust Collected: " + stardustAmt;
         }
     }
 }

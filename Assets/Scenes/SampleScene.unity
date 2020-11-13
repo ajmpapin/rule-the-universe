@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 918718377}
   - component: {fileID: 918718379}
   - component: {fileID: 918718378}
+  - component: {fileID: 918718380}
   m_Layer: 5
   m_Name: Stardust Collected
   m_TagString: Untagged
@@ -487,7 +488,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -52.9, y: 0}
-  m_SizeDelta: {x: 143.93512, y: 66.17136}
+  m_SizeDelta: {x: 144.93506, y: 66.17136}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &918718378
 MonoBehaviour:
@@ -530,6 +531,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918718376}
   m_CullTransparentMesh: 0
+--- !u!114 &918718380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918718376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269c9523f5cfb3b498765c36044bd8a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stardustCount: {fileID: 918718378}
 --- !u!1 &1887999857
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269c9523f5cfb3b498765c36044bd8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stardustCount: {fileID: 918718378}
 --- !u!1001 &9191929303323314591
 PrefabInstance:
   m_ObjectHideFlags: 0
