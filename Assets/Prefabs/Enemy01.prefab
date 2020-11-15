@@ -148,7 +148,7 @@ MonoBehaviour:
   bulletOffset: {x: 0, y: 0.7, z: 0}
   bulletPrefab: {fileID: 6592816446564458950, guid: cd414929253f6f04785fec200393d239,
     type: 3}
-  fireDelay: 0.5
+  fireDelay: 5
 --- !u!1 &9191929303381230017
 GameObject:
   m_ObjectHideFlags: 0
