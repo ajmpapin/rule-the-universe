@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed = 5f;
     public float rotSpeed = 180f;
 
+    public Sprite mainBackground;
+
     // float shipBoundaryRadius = 0.5f;
 
     // Start is called before the first frame update
@@ -45,11 +47,31 @@ public class PlayerMovement : MonoBehaviour
 
         pos += rot * velocity;
 
+        // TELEPORT player when it leaves background bounds
+
+        if(pos.y >= mainBackground.bounds.max.y) {
+            pos.y = pos.y - mainBackground.bounds.size.y;
+        }
+
+        if(pos.y <= mainBackground.bounds.min.y) {
+            pos.y = pos.y + mainBackground.bounds.size.y;
+        }
+
+        if(pos.x >= mainBackground.bounds.max.x) {
+            pos.x = pos.x - mainBackground.bounds.size.x;
+        }
+
+        if(pos.x <= mainBackground.bounds.min.x) {
+            pos.x = pos.x + mainBackground.bounds.size.x;
+        }
+
+        transform.position = pos;
+        
         // // RESTRICT player to camera boundaries
         //
-        // // top boundary
+        // top boundary
         // if(pos.y + shipBoundaryRadius > Camera.main.orthographicSize) {
-        //   pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
+        //    pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
         // }
         //
         // // bottom boundary
@@ -72,7 +94,5 @@ public class PlayerMovement : MonoBehaviour
         // }
         //
         // update our position
-        transform.position = pos;
-
     }
 }
