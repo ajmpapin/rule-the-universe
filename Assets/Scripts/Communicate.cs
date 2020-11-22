@@ -10,9 +10,9 @@ public class Communicate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject go = GameObject.Find ("PlayerShip");
+        GameObject playerShip = GameObject.Find ("PlayerShip");
 
-        Vector3 playerPosition = go.transform.position;
+        Vector3 playerPosition = playerShip.transform.position;
         // Debug.Log (go.transform.position); // playership position
 
         Vector3 alienPosition = transform.position;
@@ -23,9 +23,10 @@ public class Communicate : MonoBehaviour
 
         if(playerAlienDistance <= distanceThreshold) {
 
-            // ship faces playership
-
+            // ship faces playership, player freezes and can't shoot
             GetComponent<FacePlayer>().enabled = true;
+            playerShip.GetComponent<PlayerMovement>().enabled = false;
+            playerShip.GetComponent<PlayerShooting>().enabled = false;
 
             // execute Fungus DialogueFlowchart
             firstContact.ExecuteBlock("FirstContact");

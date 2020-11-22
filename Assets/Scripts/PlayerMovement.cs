@@ -12,12 +12,6 @@ public class PlayerMovement : MonoBehaviour
 
     // float shipBoundaryRadius = 0.5f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -66,33 +60,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         transform.position = pos;
-        
-        // // RESTRICT player to camera boundaries
-        //
-        // top boundary
-        // if(pos.y + shipBoundaryRadius > Camera.main.orthographicSize) {
-        //    pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
-        // }
-        //
-        // // bottom boundary
-        // if(pos.y - shipBoundaryRadius < -Camera.main.orthographicSize) {
-        //   pos.y = -Camera.main.orthographicSize + shipBoundaryRadius;
-        // }
-        //
-        // // calculate orthographic width based on screen ratio
-        // float screenRatio = (float)Screen.width / (float)Screen.height;
-        // float widthOrtho = Camera.main.orthographicSize * screenRatio;
-        //
-        // // right boundary
-        // if(pos.x + shipBoundaryRadius > widthOrtho) {
-        //   pos.x = widthOrtho - shipBoundaryRadius;
-        // }
-        //
-        // // left boundary
-        // if(pos.x - shipBoundaryRadius < -widthOrtho) {
-        //   pos.x = -widthOrtho + shipBoundaryRadius;
-        // }
-        //
-        // update our position
+    }
+
+    public void StartCombat()
+    {
+        enabled = true;
     }
 }

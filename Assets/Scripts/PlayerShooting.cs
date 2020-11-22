@@ -27,4 +27,9 @@ public class PlayerShooting : MonoBehaviour
             bulletGO.layer = gameObject.layer;
         }
     }
+
+    public void StartCombat()
+    {
+        enabled = true;
+    }
 }
