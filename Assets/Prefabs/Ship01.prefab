@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 9191929302924220285}
   - component: {fileID: 8025117321277939247}
   - component: {fileID: 9191929302924220286}
+  - component: {fileID: 786270585}
   m_Layer: 9
-  m_Name: Enemy01
+  m_Name: Ship01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +111,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9191929302924220227}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32d3858acfbcfe42ba27e7fa8842c13, type: 3}
   m_Name: 
@@ -123,7 +124,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9191929302924220227}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8550f5d57213e5c45a054a94797d017c, type: 3}
   m_Name: 
@@ -149,6 +150,20 @@ MonoBehaviour:
   dropsLoot: 1
   stardustPrefab: {fileID: 7627939057953278012, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
     type: 3}
+--- !u!114 &786270585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191929302924220227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7e649b8e35f444b858f1718a9ab93d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstContact: {fileID: 0}
+  distanceThreshold: 3
 --- !u!1 &9191929303381230017
 GameObject:
   m_ObjectHideFlags: 0

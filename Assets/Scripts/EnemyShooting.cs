@@ -10,6 +10,12 @@ public class EnemyShooting : MonoBehaviour
   public float fireDelay = 0.50f;
   float cooldownTimer = 0;
 
+  public void StartCombat()
+  {
+      // Debug.Log("ATTACKING NOW");
+      enabled = true;
+  }
+
   // Update is called once per frame
   void Update()
   {

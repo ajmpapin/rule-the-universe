@@ -6,6 +6,12 @@ public class MoveForward : MonoBehaviour
 {
     public float maxSpeed = 10f;
 
+    public void StartCombat()
+    {
+        // Debug.Log("ATTACKING NOW");
+        enabled = true;
+    }
+
 
     // Update is called once per frame
     void Update()
