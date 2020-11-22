@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Communicate : MonoBehaviour
 {
-
+    public Fungus.Flowchart firstContact;
     public float distanceThreshold = 5.0f;
 
     // Update is called once per frame
@@ -23,7 +23,10 @@ public class Communicate : MonoBehaviour
 
         if(playerAlienDistance <= distanceThreshold) {
 
-            // start Fungus dialogue
+            // execute Fungus DialogueFlowchart
+            firstContact.ExecuteBlock("FirstContact");
+
+            // ExecuteBlock(string FirstContact);
             Debug.Log ("In the zone!");
 
             // kill this Communicate script
