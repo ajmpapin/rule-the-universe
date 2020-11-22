@@ -23,6 +23,10 @@ public class Communicate : MonoBehaviour
 
         if(playerAlienDistance <= distanceThreshold) {
 
+            // ship faces playership
+
+            GetComponent<FacePlayer>().enabled = true;
+
             // execute Fungus DialogueFlowchart
             firstContact.ExecuteBlock("FirstContact");
 

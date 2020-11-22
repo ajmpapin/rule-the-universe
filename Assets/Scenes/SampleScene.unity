@@ -357,6 +357,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9191929302924220226, guid: e4ad4b2979b30d4489d2f5aac5b78cec,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9191929302924220226, guid: e4ad4b2979b30d4489d2f5aac5b78cec,
+        type: 3}
+      propertyPath: rotSpeed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 9191929302924220227, guid: e4ad4b2979b30d4489d2f5aac5b78cec,
         type: 3}
       propertyPath: m_Name
@@ -1112,7 +1122,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1204042941}
   selectedCommands:
-  - {fileID: 1204042947}
+  - {fileID: 1204042945}
   variables: []
   description: 
   stepPause: 0
