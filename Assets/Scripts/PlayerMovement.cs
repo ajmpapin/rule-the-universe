@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     // float shipBoundaryRadius = 0.5f;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // ROTATE the ship
 

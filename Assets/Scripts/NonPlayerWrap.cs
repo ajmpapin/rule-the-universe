@@ -6,7 +6,7 @@ public class NonPlayerWrap : MonoBehaviour
 {
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         GameObject playerShip = GameObject.Find ("PlayerShip");
 
