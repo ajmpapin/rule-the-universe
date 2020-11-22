@@ -7,12 +7,6 @@ public class Communicate : MonoBehaviour
 
     public float distanceThreshold = 5.0f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -28,7 +22,12 @@ public class Communicate : MonoBehaviour
         // Debug.Log (playerAlienDistance);
 
         if(playerAlienDistance <= distanceThreshold) {
+
+            // start Fungus dialogue
             Debug.Log ("In the zone!");
+
+            // kill this Communicate script
+            Destroy(this);
         }
     }
 }
