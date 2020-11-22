@@ -1034,6 +1034,8 @@ GameObject:
   - component: {fileID: 1204042947}
   - component: {fileID: 1204042948}
   - component: {fileID: 1204042949}
+  - component: {fileID: 1204042950}
+  - component: {fileID: 1204042951}
   m_Layer: 0
   m_Name: DialogueFlowchart
   m_TagString: Untagged
@@ -1113,7 +1115,7 @@ MonoBehaviour:
   scrollPos: {x: 108.20616, y: 1.9226804}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
+  blockViewHeight: 308
   zoom: 0.97
   scrollViewRect:
     serializedVersion: 2
@@ -1121,10 +1123,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1204042941}
-  selectedCommands:
-  - {fileID: 1204042949}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1164,7 +1164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  text: Maybe some Stardust will sweeten the deal?
+  text: 'I come bearing gifts to your glorious civilization. <i>(Cost: 2 Stardust)</i>'
   description: 
   targetBlock: {fileID: 1204042942}
   hideIfVisited: 0
@@ -1231,7 +1231,9 @@ MonoBehaviour:
   blockName: Form Alliance
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 1204042950}
+  - {fileID: 1204042951}
   suppressAllAutoSelections: 0
 --- !u!114 &1204042943
 MonoBehaviour:
@@ -1247,7 +1249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  text: How dare you intimidate me? BEHOLD.
+  text: How dare you intimidate me? BEHOLD OUR MIGHT.
   description: 
   targetBlock: {fileID: 1204042941}
   hideIfVisited: 0
@@ -1361,7 +1363,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1204042948
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1389,7 +1391,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1204042949
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1414,6 +1416,61 @@ MonoBehaviour:
   returnValueVariableKey: 
   returnValueType: System.Void
   showInherited: 0
+  callMode: 0
+--- !u!114 &1204042950
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  storyText: SUCH INFERIOR RACES HAVE COME TO RELY ON US. WE WILL AID YOU.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1204042951
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 786270577}
+  targetComponentAssemblyName: GivePower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GivePower
+  targetMethod: PowerUp
+  targetMethodText: 'PowerUp (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 1
   callMode: 0
 --- !u!1 &1330876528
 GameObject:

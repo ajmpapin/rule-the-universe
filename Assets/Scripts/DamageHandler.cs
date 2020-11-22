@@ -54,7 +54,6 @@ public class DamageHandler : MonoBehaviour
         }
 
         Destroy(gameObject);
-
     }
 
 }
