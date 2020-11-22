@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7627939057953278003}
   - component: {fileID: 7627939057953278002}
   - component: {fileID: -8026635596583964181}
+  - component: {fileID: 4450576603496992998}
   m_Layer: 0
   m_Name: Stardust
   m_TagString: loot
@@ -98,3 +99,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.24
+--- !u!114 &4450576603496992998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7627939057953278012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a6ffb627bc9ad468b244a09068d8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6592816446564458949}
   - component: {fileID: 6592816446564458944}
   - component: {fileID: 6250528565019875826}
+  - component: {fileID: 1696506476901841747}
   m_Layer: 8
   m_Name: Bullet01
   m_TagString: Untagged
@@ -148,6 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   invulnPeriod: 0
+  dropsLoot: 0
+  stardustPrefab: {fileID: 0}
 --- !u!114 &6592816446564458944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,3 +177,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 5
+--- !u!114 &1696506476901841747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6592816446564458950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a6ffb627bc9ad468b244a09068d8e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -14,10 +14,10 @@ public class FacePlayer : MonoBehaviour
     {
         if(player == null) {
             // find the player's shipBoundaryRadius
-            GameObject go = GameObject.Find ("PlayerShip");
+            GameObject playerShip = GameObject.Find ("PlayerShip");
 
-            if(go != null) {
-                player = go.transform;
+            if(playerShip != null) {
+                player = playerShip.transform;
             }
         }
 
