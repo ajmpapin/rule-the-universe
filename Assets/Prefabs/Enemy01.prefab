@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 9191929302924220225}
   - component: {fileID: 9191929302924220224}
-  - component: {fileID: 9191929302924220286}
+  - component: {fileID: 4741219022411053039}
   - component: {fileID: 9191929302924220226}
   - component: {fileID: 9191929302924220285}
-  - component: {fileID: 4741219022411053039}
   - component: {fileID: 8025117321277939247}
+  - component: {fileID: 9191929302924220286}
   m_Layer: 9
   m_Name: Enemy01
   m_TagString: Untagged
@@ -58,49 +58,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &9191929302924220286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9191929302924220227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d679560f980241946bba26a371db9819, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
-  invulnPeriod: 0
-  dropsLoot: 1
-  stardustPrefab: {fileID: 7627939057953278012, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
-    type: 3}
---- !u!114 &9191929302924220226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9191929302924220227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e60b572f63f422a469d7da11a8e02001, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotSpeed: 90
---- !u!114 &9191929302924220285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9191929302924220227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32d3858acfbcfe42ba27e7fa8842c13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 3
 --- !u!60 &4741219022411053039
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -133,6 +90,32 @@ PolygonCollider2D:
       - {x: 0.011039555, y: -0.42378592}
       - {x: 0.35512125, y: -0.13390887}
       - {x: 0.52295303, y: -0.13027292}
+--- !u!114 &9191929302924220226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191929302924220227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60b572f63f422a469d7da11a8e02001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 90
+--- !u!114 &9191929302924220285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191929302924220227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32d3858acfbcfe42ba27e7fa8842c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 3
 --- !u!114 &8025117321277939247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +132,23 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6592816446564458950, guid: cd414929253f6f04785fec200393d239,
     type: 3}
   fireDelay: 5
+--- !u!114 &9191929302924220286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191929302924220227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d679560f980241946bba26a371db9819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  invulnPeriod: 0
+  dropsLoot: 1
+  stardustPrefab: {fileID: 7627939057953278012, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+    type: 3}
 --- !u!1 &9191929303381230017
 GameObject:
   m_ObjectHideFlags: 0
