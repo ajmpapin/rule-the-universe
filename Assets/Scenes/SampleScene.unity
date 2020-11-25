@@ -1036,6 +1036,8 @@ GameObject:
   - component: {fileID: 1204042949}
   - component: {fileID: 1204042950}
   - component: {fileID: 1204042951}
+  - component: {fileID: 1204042953}
+  - component: {fileID: 1204042952}
   m_Layer: 0
   m_Name: DialogueFlowchart
   m_TagString: Untagged
@@ -1123,8 +1125,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1204042942}
+  selectedCommands:
+  - {fileID: 1204042951}
   variables: []
   description: 
   stepPause: 0
@@ -1234,6 +1238,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1204042950}
   - {fileID: 1204042951}
+  - {fileID: 1204042953}
+  - {fileID: 1204042952}
   suppressAllAutoSelections: 0
 --- !u!114 &1204042943
 MonoBehaviour:
@@ -1471,6 +1477,62 @@ MonoBehaviour:
   returnValueVariableKey: 
   returnValueType: System.Void
   showInherited: 1
+  callMode: 0
+--- !u!114 &1204042952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1887999857}
+  targetComponentAssemblyName: PlayerShooting, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerShooting
+  targetMethod: StartCombat
+  targetMethodText: 'StartCombat (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1204042953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1887999857}
+  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerMovement
+  targetMethod: StartCombat
+  targetMethodText: 'StartCombat (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
   callMode: 0
 --- !u!1 &1330876528
 GameObject:

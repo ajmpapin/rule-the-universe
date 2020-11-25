@@ -30,6 +30,13 @@ public class GivePower : MonoBehaviour
         fadeColor = shipSprite.color.a;
         fadeColor -= (1 / fadeTime) * Time.deltaTime;
         shipSprite.color = new Color (1, 1, 1, fadeColor);
+        Debug.Log (shipSprite.color.a);
+
+        if (fadeColor <= 0) {
+            Destroy(gameObject);
+        }
+
+
 
     }
 
