@@ -8,6 +8,8 @@ public class GivePower : MonoBehaviour
     public float fadeTime = 2f;
     float fadeColor;
 
+    public GameObject powerupPrefab;
+
     public void PowerUp(){
       enabled = true;
     }
@@ -33,10 +35,9 @@ public class GivePower : MonoBehaviour
         Debug.Log (shipSprite.color.a);
 
         if (fadeColor <= 0) {
+            Instantiate(powerupPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-
-
 
     }
 

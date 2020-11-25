@@ -48,8 +48,7 @@ public class DamageHandler : MonoBehaviour
     void Die() {
         if(dropsLoot == true) {
             Debug.Log ("Twinkle...");
-
-            GameObject stardustGO = (GameObject)Instantiate(stardustPrefab, transform.position, transform.rotation);
+            Instantiate(stardustPrefab, transform.position, transform.rotation);
 
         }
 
