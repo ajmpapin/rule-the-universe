@@ -10,7 +10,7 @@ TextureImporter:
     second: sheet_1
   - first:
       213: -3656531271222932061
-    second: Enemy01
+    second: Ship01
   - first:
       213: 3930011312167392660
     second: Bullet01
@@ -22,10 +22,10 @@ TextureImporter:
     second: power_up
   - first:
       213: 4530623484691778272
-    second: sheet_6
+    second: Ship02
   - first:
       213: -5581956015464806101
-    second: sheet_7
+    second: Ship03
   - first:
       213: -2661919970533589962
     second: sheet_8
@@ -183,7 +183,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy01
+      name: Ship01
       rect:
         serializedVersion: 2
         x: 120
@@ -254,7 +254,7 @@ TextureImporter:
         width: 19
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,6 +262,48 @@ TextureImporter:
       bones: []
       spriteID: 8f34e8da97e381e90800000000000000
       internalID: -7054820123952135176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ship02
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 874
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea88181e0200ee30800000000000000
+      internalID: 4530623484691778272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ship03
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 233
+        width: 112
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b298d521498e882b0800000000000000
+      internalID: -5581956015464806101
       vertices: []
       indices: 
       edges: []

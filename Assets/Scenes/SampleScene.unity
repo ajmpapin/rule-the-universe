@@ -376,7 +376,7 @@ PrefabInstance:
     - target: {fileID: 9191929302924220227, guid: e4ad4b2979b30d4489d2f5aac5b78cec,
         type: 3}
       propertyPath: m_Name
-      value: ShipAlienA
+      value: ShipAlienA1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4ad4b2979b30d4489d2f5aac5b78cec, type: 3}
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 571609782}
   - component: {fileID: 571609781}
   m_Layer: 0
-  m_Name: AlienA
+  m_Name: AlienA1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -836,8 +836,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -52.9, y: 0}
-  m_SizeDelta: {x: 219.71265, y: 74.47992}
+  m_AnchoredPosition: {x: -31.849976, y: 0}
+  m_SizeDelta: {x: 240.76978, y: 74.47992}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &918718378
 MonoBehaviour:
@@ -1036,7 +1036,6 @@ GameObject:
   - component: {fileID: 1204042940}
   - component: {fileID: 1204042945}
   - component: {fileID: 1204042944}
-  - component: {fileID: 1204042946}
   - component: {fileID: 1204042947}
   - component: {fileID: 1204042948}
   - component: {fileID: 1204042949}
@@ -1044,6 +1043,10 @@ GameObject:
   - component: {fileID: 1204042951}
   - component: {fileID: 1204042953}
   - component: {fileID: 1204042952}
+  - component: {fileID: 1204042946}
+  - component: {fileID: 1204042955}
+  - component: {fileID: 1204042954}
+  - component: {fileID: 1204042956}
   m_Layer: 0
   m_Name: DialogueFlowchart
   m_TagString: Untagged
@@ -1094,7 +1097,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 59
     y: 121.03093
-    width: 121.13402
+    width: 116.52174
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1120,11 +1123,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 108.20616, y: 1.9226804}
+  scrollPos: {x: 269.3548, y: 37.937485}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 308
-  zoom: 0.97
+  zoom: 0.76666665
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1134,7 +1137,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1204042942}
   selectedCommands:
-  - {fileID: 1204042951}
+  - {fileID: 1204042956}
   variables: []
   description: 
   stepPause: 0
@@ -1201,7 +1204,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 240
     y: 71.5
-    width: 121.13402
+    width: 115.21739
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1214,8 +1217,8 @@ MonoBehaviour:
   - {fileID: 1204042948}
   - {fileID: 1204042949}
   - {fileID: 1204042944}
-  - {fileID: 1204042946}
   - {fileID: 1204042947}
+  - {fileID: 1204042946}
   suppressAllAutoSelections: 0
 --- !u!114 &1204042942
 MonoBehaviour:
@@ -1232,8 +1235,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 240
-    y: 177
-    width: 128.35051
+    y: 179
+    width: 121.73913
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1246,6 +1249,7 @@ MonoBehaviour:
   - {fileID: 1204042951}
   - {fileID: 1204042953}
   - {fileID: 1204042952}
+  - {fileID: 1204042956}
   suppressAllAutoSelections: 0
 --- !u!114 &1204042943
 MonoBehaviour:
@@ -1288,7 +1292,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 3
+    floatVal: 1
   durationOLD: 0
 --- !u!114 &1204042945
 MonoBehaviour:
@@ -1304,7 +1308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 0
-  storyText: PREPARE TO BE ANNILATED.
+  storyText: PREPARE TO BE ANNIHILATED.
   description: 
   character: {fileID: 571609781}
   portrait: {fileID: 0}
@@ -1329,7 +1333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 8
+  itemId: 17
   indentLevel: 0
   description: 
   targetObject: {fileID: 786270577}
@@ -1486,7 +1490,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1204042952
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1514,7 +1518,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1204042953
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1535,6 +1539,103 @@ MonoBehaviour:
   targetMethod: StartCombat
   targetMethodText: 'StartCombat (): Void'
   methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1204042954
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 404.42786
+    y: 221.14948
+    width: 143.91306
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 19
+  blockName: Insufficient Funds
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+  suppressAllAutoSelections: 0
+--- !u!114 &1204042955
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 404.42786
+    y: 135.14948
+    width: 119.13044
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 18
+  blockName: Pay Stardust
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+  suppressAllAutoSelections: 0
+--- !u!114 &1204042956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 20
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1887999857}
+  targetComponentAssemblyName: LootStardust, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: LootStardust
+  targetMethod: BuyFriendship
+  targetMethodText: 'BuyFriendship (Int32): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
   saveReturnValue: 0
   returnValueVariableKey: 
   returnValueType: System.Void
