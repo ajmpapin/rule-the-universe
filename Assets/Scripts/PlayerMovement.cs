@@ -2,19 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
-{
-
+public class PlayerMovement : MonoBehaviour {
     public float maxSpeed = 5f;
     public float rotSpeed = 180f;
-
     public Sprite mainBackground;
-
     // float shipBoundaryRadius = 0.5f;
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         // ROTATE the ship
 
         // Grab our rotation quaternion
@@ -32,13 +26,13 @@ public class PlayerMovement : MonoBehaviour
         // Feed the quaternion into our rotation
         transform.rotation = rot;
 
-
         // MOVE the ship
-
         Vector3 pos = transform.position;
-
-        Vector3 velocity = new Vector3(0, Input.GetAxis("Vertical") * maxSpeed * Time.deltaTime, 0);
-
+        Vector3 velocity = new Vector3(
+            0,
+            Input.GetAxis("Vertical") * maxSpeed * Time.deltaTime,
+            0
+        );
         pos += rot * velocity;
 
         // TELEPORT player when it leaves background bounds
@@ -62,8 +56,7 @@ public class PlayerMovement : MonoBehaviour
         transform.position = pos;
     }
 
-    public void StartCombat()
-    {
+    public void StartCombat() {
         enabled = true;
     }
 }

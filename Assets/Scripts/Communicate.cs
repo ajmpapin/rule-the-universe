@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Communicate : MonoBehaviour
-{
+public class Communicate : MonoBehaviour {
     public Fungus.Flowchart firstContact;
     public float distanceThreshold = 5.0f;
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         GameObject playerShip = GameObject.Find ("PlayerShip");
 
         Vector3 playerPosition = playerShip.transform.position;
@@ -21,8 +18,7 @@ public class Communicate : MonoBehaviour
         float playerAlienDistance = Vector3.Distance(playerPosition, alienPosition);
         // Debug.Log (playerAlienDistance);
 
-        if(playerAlienDistance <= distanceThreshold) {
-
+        if (playerAlienDistance <= distanceThreshold) {
             // ship faces playership, player freezes and can't shoot
             GetComponent<FacePlayer>().enabled = true;
             playerShip.GetComponent<PlayerMovement>().enabled = false;
