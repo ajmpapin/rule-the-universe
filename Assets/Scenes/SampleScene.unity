@@ -280,7 +280,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &351120830
 PrefabInstance:
@@ -472,7 +472,7 @@ RectTransform:
   m_Children:
   - {fileID: 918718377}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -706,8 +706,77 @@ Transform:
   m_Children:
   - {fileID: 786270584}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &638403022
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.331757
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.3570366
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278012, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Stardust (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a4f805759d27e5a44bf05f6ba9ae6d3e, type: 3}
 --- !u!1 &786270577 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9191929302924220227, guid: e4ad4b2979b30d4489d2f5aac5b78cec,
@@ -892,6 +961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269c9523f5cfb3b498765c36044bd8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstContact: {fileID: 0}
   stardustCount: {fileID: 918718378}
 --- !u!1 &999146016
 GameObject:
@@ -935,7 +1005,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1124695919
 GameObject:
@@ -1039,14 +1109,18 @@ GameObject:
   - component: {fileID: 1204042947}
   - component: {fileID: 1204042948}
   - component: {fileID: 1204042949}
-  - component: {fileID: 1204042950}
-  - component: {fileID: 1204042951}
-  - component: {fileID: 1204042953}
-  - component: {fileID: 1204042952}
   - component: {fileID: 1204042946}
-  - component: {fileID: 1204042955}
   - component: {fileID: 1204042954}
   - component: {fileID: 1204042956}
+  - component: {fileID: 1204042957}
+  - component: {fileID: 1204042955}
+  - component: {fileID: 1204042953}
+  - component: {fileID: 1204042952}
+  - component: {fileID: 1204042951}
+  - component: {fileID: 1204042950}
+  - component: {fileID: 1204042960}
+  - component: {fileID: 1204042959}
+  - component: {fileID: 1204042958}
   m_Layer: 0
   m_Name: DialogueFlowchart
   m_TagString: Untagged
@@ -1097,7 +1171,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 59
     y: 121.03093
-    width: 116.52174
+    width: 119.339615
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1123,11 +1197,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 269.3548, y: 37.937485}
+  scrollPos: {x: 340.68646, y: 50.99955}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 308
-  zoom: 0.76666665
+  blockViewHeight: 260
+  zoom: 0.7066667
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1135,9 +1209,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1204042942}
-  selectedCommands:
-  - {fileID: 1204042956}
+  - {fileID: 1204042957}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1161,7 +1234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1204042940
 MonoBehaviour:
@@ -1204,7 +1277,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 240
     y: 71.5
-    width: 115.21739
+    width: 119.339615
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1234,21 +1307,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 240
-    y: 179
-    width: 121.73913
+    x: 237.39131
+    y: 184.2174
+    width: 143.39621
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 3
-  blockName: Form Alliance
+  blockName: Attempt Alliance
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1204042950}
-  - {fileID: 1204042951}
-  - {fileID: 1204042953}
-  - {fileID: 1204042952}
   - {fileID: 1204042956}
   suppressAllAutoSelections: 0
 --- !u!114 &1204042943
@@ -1442,24 +1511,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1204042935}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 12
+  itemId: 28
   indentLevel: 0
-  storyText: SUCH INFERIOR RACES HAVE COME TO RELY ON US. WE WILL AID YOU.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  targetObject: {fileID: 1887999857}
+  targetComponentAssemblyName: PlayerShooting, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerShooting
+  targetMethod: StartCombat
+  targetMethodText: 'StartCombat (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &1204042951
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1469,25 +1539,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1204042935}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 13
+  itemId: 27
   indentLevel: 0
-  description: 
-  targetObject: {fileID: 786270577}
-  targetComponentAssemblyName: GivePower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: GivePower
-  targetMethod: PowerUp
-  targetMethodText: 'PowerUp (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 1
-  callMode: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
 --- !u!114 &1204042952
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1500,14 +1560,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 15
+  itemId: 26
   indentLevel: 0
   description: 
   targetObject: {fileID: 1887999857}
-  targetComponentAssemblyName: PlayerShooting, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerShooting
+  targetComponentText: PlayerMovement
   targetMethod: StartCombat
   targetMethodText: 'StartCombat (): Void'
   methodParameters: []
@@ -1528,16 +1588,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 14
+  itemId: 25
   indentLevel: 0
   description: 
-  targetObject: {fileID: 1887999857}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
+  targetObject: {fileID: 786270577}
+  targetComponentAssemblyName: GivePower, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StartCombat
-  targetMethodText: 'StartCombat (): Void'
+  targetComponentText: GivePower
+  targetMethod: PowerUp
+  targetMethodText: 'PowerUp (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -1558,9 +1618,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 404.42786
-    y: 221.14948
-    width: 143.91306
+    x: 416.94226
+    y: 134.27496
+    width: 149.0566
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1568,7 +1628,10 @@ MonoBehaviour:
   blockName: Insufficient Funds
   description: 
   eventHandler: {fileID: 0}
-  commandList: []
+  commandList:
+  - {fileID: 1204042959}
+  - {fileID: 1204042960}
+  - {fileID: 1204042958}
   suppressAllAutoSelections: 0
 --- !u!114 &1204042955
 MonoBehaviour:
@@ -1579,26 +1642,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1204042935}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 404.42786
-    y: 135.14948
-    width: 119.13044
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 18
-  blockName: Pay Stardust
+  itemId: 23
+  indentLevel: 0
+  storyText: SUCH INFERIOR RACES HAVE COME TO RELY ON US. WE WILL AID YOU.
   description: 
-  eventHandler: {fileID: 0}
-  commandList: []
-  suppressAllAutoSelections: 0
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1204042956
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1641,6 +1705,171 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1204042957
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 418.71222
+    y: 194.52895
+    width: 126.41509
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 29
+  blockName: Form Alliance
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1204042955}
+  - {fileID: 1204042953}
+  - {fileID: 1204042952}
+  - {fileID: 1204042951}
+  - {fileID: 1204042950}
+  suppressAllAutoSelections: 0
+--- !u!114 &1204042958
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 32
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1204042941}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1204042959
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616cd37e21c7645c58a89edf5abee56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 31
+  indentLevel: 0
+  duration: 0.5
+  amount: {x: 1, y: 1}
+  waitUntilFinished: 0
+--- !u!114 &1204042960
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204042935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 30
+  indentLevel: 0
+  storyText: DO YOU TAKE US FOR FOOLS?
+  description: 
+  character: {fileID: 571609781}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!1001 &1227282958
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.9690666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1133108
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278003, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627939057953278012, guid: a4f805759d27e5a44bf05f6ba9ae6d3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Stardust
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a4f805759d27e5a44bf05f6ba9ae6d3e, type: 3}
 --- !u!1 &1330876528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,7 +2200,7 @@ Transform:
   - {fileID: 523505982}
   - {fileID: 182464929}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1656657884
 GameObject:
@@ -2141,7 +2370,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1887999860
 MonoBehaviour:
@@ -2271,6 +2500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269c9523f5cfb3b498765c36044bd8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstContact: {fileID: 1204042938}
   stardustCount: {fileID: 918718378}
 --- !u!114 &1887999866
 MonoBehaviour:
