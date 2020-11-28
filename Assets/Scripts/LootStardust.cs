@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class LootStardust : MonoBehaviour {
-    public Fungus.Flowchart firstContact;
     public Text stardustCount;
     int stardustAmt = 0;
 
@@ -18,14 +17,14 @@ public class LootStardust : MonoBehaviour {
         }
     }
 
-    public void BuyFriendship(int fee) {
+    public void BuyFriendship(Fungus.Flowchart flowchart, int fee) {
         if (stardustAmt < fee) {
             // don't take stardust, player is broke :(
-            firstContact.ExecuteBlock("Insufficient Funds");
+            flowchart.ExecuteBlock("Insufficient Funds");
         } else {
             stardustAmt = stardustAmt - fee;
             stardustCount.text = "Stardust Collected: " + stardustAmt;
-            firstContact.ExecuteBlock("Form Alliance");
+            flowchart.ExecuteBlock("Form Alliance");
         }
     }
 }

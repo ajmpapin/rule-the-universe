@@ -15,7 +15,7 @@ public class DamageHandler : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D entity) {
-        if (entity.tag == "loot") {
+        if (entity.tag == "loot" || entity.tag == "powerup") {
             // do nothing
         } else {
             health--;
