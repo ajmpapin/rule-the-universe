@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour {
     public float maxSpeed = 5f;
     public float rotSpeed = 180f;
     public Sprite mainBackground;
-    // float shipBoundaryRadius = 0.5f;
+    Vector3 velocity = new Vector3(0, 0, 0);
+    public float accelerationCap = 1.5f;
 
     void FixedUpdate() {
         // ROTATE the ship
@@ -28,12 +29,14 @@ public class PlayerMovement : MonoBehaviour {
 
         // MOVE the ship
         Vector3 pos = transform.position;
-        Vector3 velocity = new Vector3(
-            0,
-            Input.GetAxis("Vertical") * maxSpeed * Time.deltaTime,
-            0
-        );
-        pos += rot * velocity;
+
+        // float speed = Input.GetAxis("Vertical") * maxSpeed;
+        // Vector3 velocity = rot * new Vector3(0, speed, 0);
+
+        float shipAcceleration = Input.GetAxis("Vertical") * accelerationCap;
+        Vector3 acceleration = rot * new Vector3(0, shipAcceleration, 0);
+        pos += velocity * Time.deltaTime;
+        velocity += acceleration * Time.deltaTime;
 
         // TELEPORT player when it leaves background bounds
 
