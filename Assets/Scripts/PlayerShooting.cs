@@ -12,16 +12,21 @@ public class PlayerShooting : MonoBehaviour {
         cooldownTimer -= Time.deltaTime;
 
         if (Input.GetButton("Fire1") && cooldownTimer <= 0 ) {
-            // Shoot!
-            Debug.Log ("Pew!");
-            cooldownTimer = fireDelay;
-            Vector3 offset = transform.rotation * bulletOffset;
-            GameObject bulletGO = (GameObject)Instantiate(
-                bulletPrefab,
-                transform.position + offset,
-                transform.rotation
-            );
-            bulletGO.layer = gameObject.layer;
+            // check if paused
+            if (PauseMenu.isPaused) {
+                Debug.Log("Game Paused stop shooting");
+            } else {
+                // Shoot!
+                Debug.Log ("Pew!");
+                cooldownTimer = fireDelay;
+                Vector3 offset = transform.rotation * bulletOffset;
+                GameObject bulletGO = (GameObject)Instantiate(
+                    bulletPrefab,
+                    transform.position + offset,
+                    transform.rotation
+                );
+                bulletGO.layer = gameObject.layer;
+            }
         }
     }
 

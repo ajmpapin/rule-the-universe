@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
-    public float maxSpeed = 5f;
+    // public float maxSpeed = 5f;
     public float rotSpeed = 180f;
     public Sprite mainBackground;
     Vector3 velocity = new Vector3(0, 0, 0);
     public float accelerationCap = 1.5f;
+    public float dragCoefficient = 1f;
 
     void FixedUpdate() {
         // ROTATE the ship
@@ -27,16 +28,25 @@ public class PlayerMovement : MonoBehaviour {
         // Feed the quaternion into our rotation
         transform.rotation = rot;
 
-        // MOVE the ship
+        // ship movement starts here
         Vector3 pos = transform.position;
-
         // float speed = Input.GetAxis("Vertical") * maxSpeed;
         // Vector3 velocity = rot * new Vector3(0, speed, 0);
 
+        // acceleration from player input
         float shipAcceleration = Input.GetAxis("Vertical") * accelerationCap;
         Vector3 acceleration = rot * new Vector3(0, shipAcceleration, 0);
-        pos += velocity * Time.deltaTime;
+
+        // add drag
+        if (shipAcceleration > 0) {
+            Vector3 drag =
+                dragCoefficient * velocity.sqrMagnitude * -velocity.normalized;
+            acceleration = acceleration + drag;
+        }
+
+        // accelerate the ship, apply drag
         velocity += acceleration * Time.deltaTime;
+        pos += velocity * Time.deltaTime;
 
         // TELEPORT player when it leaves background bounds
 
