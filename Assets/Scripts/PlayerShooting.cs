@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour {
     public Vector3 bulletOffset = new Vector3(0, 0.7f, 0);
     public GameObject bulletPrefab;
-    public float fireDelay = 0.25f;
+    public float fireDelay = 0.5f;
     float cooldownTimer = 0;
 
     void Update() {

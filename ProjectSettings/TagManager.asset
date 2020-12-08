@@ -6,6 +6,9 @@ TagManager:
   tags:
   - loot
   - powerup
+  - powerup1
+  - powerup2
+  - powerup3
   layers:
   - Default
   - TransparentFX
