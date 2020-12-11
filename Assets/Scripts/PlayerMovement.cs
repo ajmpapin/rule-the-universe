@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour {
     // public float maxSpeed = 5f;
     public float rotSpeed = 180f;
     public Sprite mainBackground;
-    Vector3 velocity = new Vector3(0, 0, 0);
+    public Vector3 velocity = new Vector3(0, 0, 0);
     public float accelerationCap = 1.5f;
     public float dragCoefficient = 1f;
 

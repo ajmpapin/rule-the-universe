@@ -15,12 +15,16 @@ public class Communicate : MonoBehaviour {
         Vector3 alienPosition = transform.position;
         // Debug.Log (transform.position); // alien ship position
 
-        float playerAlienDistance = Vector3.Distance(playerPosition, alienPosition);
+        float playerAlienDistance =
+            Vector3.Distance(playerPosition, alienPosition);
         // Debug.Log (playerAlienDistance);
 
         if (playerAlienDistance <= distanceThreshold) {
             // ship faces playership, player freezes and can't shoot
             GetComponent<FacePlayer>().enabled = true;
+            PlayerMovement playermovement =
+                playerShip.GetComponent<PlayerMovement>();
+            playermovement.velocity = new Vector3(0, 0, 0);
             playerShip.GetComponent<PlayerMovement>().enabled = false;
             playerShip.GetComponent<PlayerShooting>().enabled = false;
 
