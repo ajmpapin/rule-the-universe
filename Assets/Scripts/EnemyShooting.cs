@@ -7,10 +7,19 @@ public class EnemyShooting : MonoBehaviour {
     public GameObject bulletPrefab;
     public float fireDelay = 0.50f;
     float cooldownTimer = 0;
+    bool alienCombat;
 
     public void StartCombat() {
         // Debug.Log("ATTACKING NOW");
         enabled = true;
+        CombatToggle.isCombat = true;
+        alienCombat = true;
+    }
+
+    void OnDestroy() {
+        if (alienCombat == true) {
+            CombatToggle.isCombat = false;
+        }
     }
 
     void Update() {

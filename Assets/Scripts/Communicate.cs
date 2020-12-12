@@ -19,7 +19,9 @@ public class Communicate : MonoBehaviour {
             Vector3.Distance(playerPosition, alienPosition);
         // Debug.Log (playerAlienDistance);
 
-        if (playerAlienDistance <= distanceThreshold) {
+        if (CombatToggle.isCombat == true) {
+            // do nothing
+        } else if (playerAlienDistance <= distanceThreshold) {
             // ship faces playership, player freezes and can't shoot
             GetComponent<FacePlayer>().enabled = true;
             PlayerMovement playermovement =
