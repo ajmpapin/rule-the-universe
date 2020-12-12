@@ -545,7 +545,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -212.09999}
-  m_SizeDelta: {x: 242.28052, y: 107.25133}
+  m_SizeDelta: {x: 324.53772, y: 107.25133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &318716629
 MonoBehaviour:
@@ -579,7 +579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Approach aliens to INTERACT with them.
+  m_Text: Use the same keys to APPROACH aliens and interact with them.
 --- !u!222 &318716630
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 795442580}
   - component: {fileID: 795442579}
   m_Layer: 5
-  m_Name: arrows-test
+  m_Name: arrows-text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1015,7 +1015,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -518.74, y: -212.09999}
-  m_SizeDelta: {x: 251.92926, y: 107.25133}
+  m_SizeDelta: {x: 285.8004, y: 107.25133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &795442579
 MonoBehaviour:
@@ -1049,7 +1049,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Use the ARROW KEYS to move. '
+  m_Text: 'Use the ARROW KEYS to move and SPACE BAR to shoot. '
 --- !u!222 &795442580
 CanvasRenderer:
   m_ObjectHideFlags: 0
