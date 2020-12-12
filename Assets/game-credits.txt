@@ -1,0 +1,50 @@
+Rule the Universe
+
+A game for the Pixelles Game Incubator VIII
+by Ashley Papineau
+
+Programming
+Ashley Papineau
+
+UI / Art
+Ashley Papineau
+
+Writing
+Ashley Papineau
+
+
+Sounds courtesy of freesound.org
+
+Music
+"Outer Space" by wi-photos
+
+Sound Effects
+"Laser Impact" by SeanSecret
+"Ding" by chennes
+"Blippy" by kaboose102
+
+Playtesters
+Maura Madsen
+Ramy Daghstani
+Anita He
+Maude Roussin
+
+Created with Unity and Fungus <3
+
+SPECIAL THANKS
+
+The PGI8 Coordinators
+Elaine Gusella
+Maude Roussin
+Brooke Jurdak
+Katherine Boutin
+
+The PGI8 Mentors, for their support
+
+My fellow PGI8 participants, for their resilience, inspiration, and good cheer during this dumpster fire that is 2020. 
+
+quill18creates, whose YouTube space shooter tutorial provided the bedrock for this entire game
+
+
+ULTIMATE SPECIAL THANKS OF ALL TIME
+My dear husband, Devin. Your countless hours of programming tutelage and bottomless patience helped me to make a game I never could have dreamed of creating.
