@@ -10,6 +10,7 @@ public class DamageHandler : MonoBehaviour {
     public Sprite fullShip;
     public Sprite emptyShip;
     public Sprite bonusShip;
+    public AudioSource damageSound;
 
     public float invulnPeriod = 0;
     float invulnTimer = 0;
@@ -26,6 +27,7 @@ public class DamageHandler : MonoBehaviour {
             // do nothing
         } else {
             health--;
+            damageSound.Play();
             invulnTimer = invulnPeriod;
             gameObject.layer = 10;
         }

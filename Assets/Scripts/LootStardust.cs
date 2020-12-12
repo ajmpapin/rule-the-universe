@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class LootStardust : MonoBehaviour {
     public Text stardustCount;
     int stardustAmt = 0;
+    public AudioSource lootSound;
 
     void OnTriggerEnter2D(Collider2D entity) {
         if (entity.tag == "loot") {
+            lootSound.Play();
             Debug.Log ("Ka-ching!");
             Destroy(entity.gameObject);
             stardustAmt++;

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class LootPowerUp : MonoBehaviour {
     int powerupAmt = 0;
+    public AudioSource PUSound;
 
     void OnTriggerEnter2D(Collider2D entity) {
         if (entity.tag == "powerup1") { // fire faster
             Debug.Log ("ADD MUSICAL CUE PLEASE");
+            PUSound.Play();
             Destroy(entity.gameObject);
             GetComponent<PlayerShooting>().fireDelay = 0.25f;
             Debug.Log ("you have increased rate of fire!");
@@ -15,6 +17,7 @@ public class LootPowerUp : MonoBehaviour {
 
         if (entity.tag == "powerup2") { // add health
             Debug.Log ("ADD MUSICAL CUE PLEASE");
+            PUSound.Play();
             Destroy(entity.gameObject);
             GetComponent<DamageHandler>().healthPoss = 4;
             GetComponent<DamageHandler>().health = 4;
@@ -23,6 +26,7 @@ public class LootPowerUp : MonoBehaviour {
 
         if (entity.tag == "powerup3") { // accelerate more
             Debug.Log ("ADD MUSICAL CUE PLEASE");
+            PUSound.Play();
             Destroy(entity.gameObject);
             GetComponent<PlayerMovement>().accelerationCap = 8;
             Debug.Log ("you can fly faster!");
