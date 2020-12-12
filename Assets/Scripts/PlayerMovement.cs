@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     public Vector3 velocity = new Vector3(0, 0, 0);
     public float accelerationCap = 1.5f;
     public float dragCoefficient = 1f;
+    public float brakeDrag = 2f;
 
     void FixedUpdate() {
         // ROTATE the ship
@@ -35,12 +36,19 @@ public class PlayerMovement : MonoBehaviour {
 
         // acceleration from player input
         float shipAcceleration = Input.GetAxis("Vertical") * accelerationCap;
-        Vector3 acceleration = rot * new Vector3(0, shipAcceleration, 0);
+        Vector3 acceleration = new Vector3(0, 0, 0);
 
-        // add drag
         if (shipAcceleration > 0) {
+            acceleration = rot * new Vector3(0, shipAcceleration, 0);
             Vector3 drag =
                 dragCoefficient * velocity.sqrMagnitude * -velocity.normalized;
+            acceleration = acceleration + drag;
+        }
+
+        // add drag
+        if (shipAcceleration < 0) {
+            Vector3 drag =
+                brakeDrag * velocity.magnitude * -velocity.normalized;
             acceleration = acceleration + drag;
         }
 
